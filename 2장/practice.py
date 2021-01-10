@@ -1,4 +1,4 @@
-# 숫자 자료형
+##### 숫자 자료형
 '''
 print(5)
 print(-10)
@@ -10,14 +10,14 @@ print(3*(3+1))
 '''
 
 
-# 문자열 자료형
+##### 문자열 자료형
 '''
 print('풍선')
 print("나비")
 print("나비 " * 3)
 '''
 
-# boolean(참 / 거짓) 자료형
+##### boolean(참 / 거짓) 자료형
 '''
 print(5 > 10)
 print(5 < 10)
@@ -28,7 +28,8 @@ print(not False)
 print(not (5 > 10))
 '''
 
-# 변수
+##### 변수
+'''
 # 애완동물을 소개해 주세요
 animal = "고양이"
 name = "해피"
@@ -43,3 +44,4 @@ print(name + "는 " + str(age) + "살이며, " + hobby + "을 아주 좋아해�
 # +대신 ,도 가능. 변수 타입 안바꿔줘도 됨.
 print(name, "는 ", (age), "살이며, ", hobby, "을 아주 좋아해요")
 print(name + "는 어른일까요? " + str(is_adult))
+'''
