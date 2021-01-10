@@ -1,4 +1,4 @@
-# 연산자
+##### 연산자
 '''
 print(1 + 1)
 print(3 - 2)
@@ -12,7 +12,7 @@ print(5 // 3) # 몫
 print(10 // 3)
 '''
 
-# 비교 연산자
+##### 비교 연산자
 '''
 print(10 > 3)
 print(4 >= 7)
@@ -31,7 +31,7 @@ print(5 > 4 > 3)
 print(5 > 4 > 7)
 '''
 
-# 간단한 수식
+##### 간단한 수식
 '''
 print(2 + 3 * 4)
 print((2 + 3) * 4)
@@ -53,7 +53,7 @@ number %= 5
 print(number)
 '''
 
-# 숫자 처리 함수
+##### 숫자 처리 함수
 '''
 print(abs(-5)) # 5
 print(pow(4, 2)) # 4^2
@@ -69,15 +69,17 @@ print(ceil(3.14)) # 올림
 print(sqrt(16)) # 제곱근
 '''
 
-# 랜덤 함수
+##### 랜덤 함수
+'''
 from random import *
-# print(random()) # 0.0 ~ 1.0 미만의 임의의 값 생성
-# print(random() * 10) # 0.0 ~ 10.0 미만의 임의의 값 생성
-# print(int(random() * 10)) # 0 ~ 10 미만의 임의의 값 생성
-# print(int(random() * 10) + 1) # 1 ~ 10 이하의 임의의 값 생성
+print(random()) # 0.0 ~ 1.0 미만의 임의의 값 생성
+print(random() * 10) # 0.0 ~ 10.0 미만의 임의의 값 생성
+print(int(random() * 10)) # 0 ~ 10 미만의 임의의 값 생성
+print(int(random() * 10) + 1) # 1 ~ 10 이하의 임의의 값 생성
 
 print(int(random() * 45) + 1) # 1 ~ 45 이하의 임의의 값 생성
 
 print(randrange(1, 46)) # 1 ~ 45 이하의 임의의 값 생성
 
 print(randint(1, 45)) # 1 ~ 45 이하의 임의의 값 생성
+'''
