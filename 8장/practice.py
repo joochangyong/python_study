@@ -1,6 +1,6 @@
 ##### 표준 입출력
 '''
-print("Python", "Java", sep = ", ", end = "? ") # sep = 사이에 , 넣어주기  end = 문장 맨 끝을 줄바꿈이 아닌 ?로 바꾸기
+print("Python", "Java", sep = ", ", end = "? ") # sep = 사이에 콤마 넣어주기,  end = 문장 맨 끝을 줄바꿈이 아닌 ?로 바꾸기
 print("무엇이 더 재밌을까요?")
 
 import sys
@@ -11,11 +11,11 @@ print("Python", "Java", file = sys.stderr) # 표준 에러로 출력
 scores = {"수학" : 0, "영어" : 50, "코딩" : 100}
 for subject, score in scores.items():
     # print(subject, score)
-    print(subject.ljust(3), str(score).rjust(4), sep = " : ") # .ljust(8) 왼쪽으로 정렬을 하는데 8칸을 확보한 상태에서 정렬
+    print(subject.ljust(3), str(score).rjust(4), sep = " : ") # .ljust(8) 왼쪽으로 8칸을 확보한 상태에서 정렬
 
 # 은행 대기순번표
 for num in range(1, 21):
-    print("대기번호 : ", str(num).zfill(3)) # .zfill(3) 3개의 공간을 확보하고 비어있는 공간은 0으로 대체한다
+    print("대기번호 : ", str(num).zfill(3)) # .zfill(3) 3개의 공간을 확보하고 비어있는 공간은 0으로 대체
 
 answer = input("아무값이나 입력하세요 : ") # input으로 값을 받게되면 항상 str타입으로 받는다
 print("입력하신 값은 " + answer + "입니다.")
@@ -45,13 +45,13 @@ print("{0:.2f}" .format(5/3)) # 소수점 2째자리까지 표시. 소수점 3�
 
 ##### 파일입출력
 '''
-score_file = open("score.txt", "w", encoding="utf8") # "w" 쓰기위한 용도, 덮어쓰기가 됨
+score_file = open("score.txt", "w", encoding="utf8") # "w" 쓰기위한 용도, 업데이트 시 덮어쓰기가 됨
 print("국어 : 100", file=score_file)
 print("영어 : 50", file=score_file)
 print("수학 : 0", file=score_file)
 score_file.close()
 
-score_file = open("score.txt", "a", encoding="utf8") # "a" 뒤에 내용을 계속 추가할 수 있음
+score_file = open("score.txt", "a", encoding="utf8") # "a" 업데이트 시 내용을 뒤에 추가
 score_file.write("과학 : 80")
 score_file.write("\n코딩 : 100") # .write를 쓸때는 줄바꿈이 안되서 \n을 써준다
 score_file.close()
@@ -87,7 +87,7 @@ for line in lines:
 score_file.close()
 '''
 
-##### pickle (데이터를 파일 형태로 저장해주는 것, 그 파일을 누군가에게 주면 상대방이 pickle을 이용해서 데이터를 가져와서 사용 가능)
+##### pickle (데이터를 파일 형태로 저장해주는 것)
 '''
 import pickle
 profile_file = open("profile.pickle", "wb") # wb 쓰기, 바이너리타입으로 정의
@@ -103,7 +103,7 @@ print(profile)
 profile_file.close()
 '''
 
-##### with (close를 해줄 필요가 없음)
+##### with (close가 필요없음)
 '''
 import pickle
 
